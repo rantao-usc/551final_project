@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Learn Firebase Storage Quickly</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.0/semantic.min.css" />
+</head>
+<body>
+    
+
+    <section class='ui two column center aligned grid' id='upload-view'>
+        <div class="column ui secondary segment">
+            <form class="ui form">
+                <div class="field">
+                    <input type="text" placeholder="E-mail address" id="email" />
+                </div>
+                <div class="field">
+                    <input type="password" placeholder="Password" id='pword' />
+                </div>
+                <div class="field">
+                    <input type="file" onchange="chooseFile(event)" />
+                </div>
+                <div class="ui fluid teal submit button" onclick="upLoadButtonPressed()">Upload</div>
+                <div class="ui fluid teal submit button" onclick="predict()" style="margin-top: 10px;">Classify the severity of the patient's condition</div>
+                <div class="ui fluid teal submit button" onclick="see()" style="margin-top: 10px;">See All the data in the database</div>
+
+            </form>
+        </div>
+    </section>
+    <section class="ui two column center aligned grid" id="profile-view">
+        <div class="column ui segment">
+            <img src="" class="ui image centered" id="img">
+        </div>
+    </section>
+    <section class="ui two column center aligned grid" id="profile-view">
+        <div class="column ui segment" id="cla_result">
+            
+        </div>
+    </section>
+    <table class="ui five column celled table centered">
+        <thead id="thead1">
+          <!-- <tr>
+              <th>ImageURL</th>
+              <th>Classification Result</th>
+              <th>Size</th>
+              <th>ContentType</th>
+              <th>Created Time</th>
+              <th>Updated Time</th>
+          </tr> -->
+        </thead>
+        <tbody id="tbody1">
+          <!-- <tr>
+            <td data-label="ImageURL">James</td>
+            <td data-label="CResult">24</td>
+            <td data-label="Size">Engineer</td>
+            <td data-label="ContentType">Engineer</td>
+            <td data-label="Created Time">Engineer</td>
+            <td data-label="Updated Time">Engineer</td>
+          </tr>
+          <tr>
+            <td data-label="ImageURL">James</td>
+            <td data-label="CResult">24</td>
+            <td data-label="Size">Engineer</td>
+            <td data-label="ContentType">Engineer</td>
+            <td data-label="Created Time">Engineer</td>
+            <td data-label="Updated Time">Engineer</td>
+          </tr> -->
+        </tbody>
+      </table>
+    <!-- <div class="ui seven column centered grid container">
+        <div class="row centered">
+          <div class="column">ImageURL</div>
+          <div class="column">Classification Result</div>
+          <div class="column">Size</div>
+          <div class="column">ContentType</div>
+          <div class="column">Created Time</div>
+          <div class="column">Updated Time</div>
+        </div>
+        <div class="row centered">
+            <div class="column">Isafasd</div>
+            <div class="column">Clafasdfan Result</div>
+            <div class="column">Sifasdfa</div>
+            <div class="column">Consdfaefype</div>
+            <div class="column">Creaasfated Time</div>
+            <div class="column">Upddfasdfated Time</div>
+        </div>
+    </div> -->
+    <script src="https://www.gstatic.com/firebasejs/7.9.3/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.9.3/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.9.3/firebase-storage.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.9.3/firebase-firestore.js"></script>
+
+    <script src='app.js'></script>
+</body>
+</html>
